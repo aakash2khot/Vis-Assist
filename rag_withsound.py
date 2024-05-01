@@ -15,12 +15,17 @@ from audiorecorder import audiorecorder
 from asr import query  # Import the query function from asr.py
 from TTS.api import TTS
 from IPython.display import Audio, display
+import pygame
 # Create directories if they don't exist
 if not os.path.exists('files'):
     os.mkdir('files')
 
 if not os.path.exists('jj'):
     os.mkdir('jj')
+def autoplay_audio(filename):
+    pygame.mixer.init()
+    pygame.mixer.music.load(filename)
+    pygame.mixer.music.play()
 
 # Session state initialization
 if 'template' not in st.session_state:
@@ -140,9 +145,17 @@ if len(audio) > 0:
                 speaker_wav="sample.wav",
                 language="en")
             
-            st.audio("output.wav",start_time=0)
-            # display(Audio(filename="output.wav", autoplay=True))
+            # st.audio("output.wav",start_time=0)
+            # display(Audio(filename="output.wav", aut
+            # Load audio file
+            # audio_file ="output.wav"
 
+            # # Display audio player with autoplay
+            # # st.audio(audio_file, start_time=0, autoplay=True)
+            # Audio(audio_file, autoplay=True)
+            audio_file = "output.wav"
+            autoplay_audio(audio_file)
+ 
             message_placeholder = st.empty()
             full_response = ""
             for chunk in response['result'].split():
