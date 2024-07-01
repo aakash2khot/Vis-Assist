@@ -13,9 +13,12 @@ Our solution is a Learning Module application powered by Generative AI, enabling
 3) Interact with the system via audio for content refinement.
 
 ## Technologies Used
--> LLM: Mixtral 8x7B (Mixture-of-Experts technique) 
+-> LLM: Mixtral 8x7B (Mixture-of-Experts technique)
+
 -> ASR: Whisper Large v3 (Automatic Speech Recognition) 
+
 -> TTS: XTTS v2 (Text-to-Speech) 
+
 -> Frameworks: Streamlit, LangChain 
 
 ## How the Models are working
