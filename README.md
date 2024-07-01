@@ -28,6 +28,8 @@ Our solution is a Learning Module application powered by Generative AI, enabling
 4) Speech Synthesis: The generated responses are converted into speech using a text-to-speech (TTS) model, allowing users to hear the bot's replies.
 5) PDF Generation: Tailored content created is then structured and converted into a PDF format for download.
 
+To run - ```python3 rag_withsound.py```
+
 ## Conclusion
 
 Our Generative AI-powered Vis-Assist ChatBot significantly enhances the teaching experience for visually impaired educators, providing them with tailored, accessible educational content. This project aims to bridge the gap between special and mainstream education, promoting inclusivity and accessibility.
